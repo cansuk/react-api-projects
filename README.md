@@ -45,10 +45,16 @@
 <br>
 Preview
 
-<img src='https://github.com/cansuk/react-api-projects/blob/master/public/ss1.png?raw=true' />
+<img src='https://raw.githubusercontent.com/cansuk/react-api-projects/master/public/ss1.png?token=AHG2WFK7JHXCQYKCZ2X3R5TBTJLWG' />
 <br>
 <hr>
-<img src="https://github.com/cansuk/g2plot-chart-wrapper/blob/master/public/ss2.png?raw=true" />
+<img src='https://raw.githubusercontent.com/cansuk/react-api-projects/master/public/ss2.png?token=AHG2WFNNQU6Y6NIVQX6JYH3BTJL34' />
+<hr>
+<img src='https://raw.githubusercontent.com/cansuk/react-api-projects/master/public/ss2.png?token=AHG2WFNNQU6Y6NIVQX6JYH3BTJL34' />
+
+<img src="https://raw.githubusercontent.com/cansuk/react-api-projects/master/public/ss4.png?token=AHG2WFNLLDYWPXFNMYJTB3LBTJMCO" />
+
+**[Development in continue...]**
 
 ## :dart: About ##
 
