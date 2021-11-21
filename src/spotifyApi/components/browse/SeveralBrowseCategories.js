@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Grid } from 'semantic-ui-react';
-import { getAvailableGenreSeeds } from '../../api';
+import { getSeveralBrowseCategories } from '../../api';
 import uniqid from 'uniqid';
 
-const AvailableGenreSeeds = () => {
+const SeveralBrowseCategories = () => {
     const [content, setContent] = useState(<></>);
     useEffect(() => {
-        getAvailableGenreSeeds().then(({ genres }) => {
-            const columns = genres?.map(genre =>
+        getSeveralBrowseCategories().then(({ categories }) => {
+            debugger;
+            const columns = categories.items?.map(item =>
                 <Grid.Column key={uniqid()} celled>
-                    {genre}
+                    {item.name}
                 </Grid.Column>
             );
             setContent(<Grid columns={8} celled>{columns}</Grid>);
@@ -20,4 +21,4 @@ const AvailableGenreSeeds = () => {
     return content;
 }
 
-export default AvailableGenreSeeds;
+export default SeveralBrowseCategories;

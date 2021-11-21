@@ -49,7 +49,18 @@ export default function BasicExample() {
           </Route>
           <Route path="/auth" element={<LoggedIn />} />
           <Route path="/logged-in" element={<LoggedIn />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home />}>
+
+            {/* <Route path="" element={<Invoice />} /> */}
+          </Route>
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
         </Routes>
       </div>
     </Router>
