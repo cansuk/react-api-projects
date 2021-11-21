@@ -50,7 +50,10 @@ Preview
 
 ## :dart: About ##
 
-Spotify api implemented in React project. 
+:musical_note: Spotify api implemented in React project. 
+<br/>
+▶️ Web api documentation : 
+https://developer.spotify.com/documentation/general/guides/authorization/
 
 ## :sparkles: Features ##
 
@@ -67,6 +70,8 @@ The following tools were used in this project:
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+👍 Create application https://developer.spotify.com/dashboard/ and get your client_id.
 
 ## :checkered_flag: Starting ##
 
