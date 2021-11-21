@@ -1,11 +1,3 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="A React Api Project" />
-
-  &#xa0;
-
-  <!-- <a href="https://reactapiprojects.netlify.app">Demo</a> -->
-</div>
-
 <h1 align="center">Spotify Api Implementation</h1>
 
 <p align="center">
