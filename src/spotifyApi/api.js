@@ -4,7 +4,7 @@ const { endpoint } = config;
 
 const spotify = JSON.parse(window.localStorage.getItem('spotify'));
 
-const token = spotify["spotify-token"];
+const token = spotify?.["spotify-token"];
 
 export const getAvailableGenreSeeds = async () => {
     var myHeaders = new Headers();

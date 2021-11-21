@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Category from "./spotifyApi/components/browse/Category";
 import Home from "./spotifyApi/components/home";
 import LoggedIn from "./spotifyApi/components/login/loggedIn";
 import Login from "./spotifyApi/components/login/login";
@@ -21,7 +22,7 @@ import Login from "./spotifyApi/components/login/login";
 export default function BasicExample() {
   return (
     <Router>
-      <div>
+      <>
         {/* <ul>
           <li>
             <Link to="/">Home</Link>
@@ -44,15 +45,12 @@ export default function BasicExample() {
           of them to render at a time
         */}
         <Routes>
-          <Route exact path="/" element={<Login />}>
-
-          </Route>
+          <Route exact path="/" element={<Login />} />
           <Route path="/auth" element={<LoggedIn />} />
           <Route path="/logged-in" element={<LoggedIn />} />
-          <Route path="/home" element={<Home />}>
+          <Route path="/home" element={<Home />} />
+          <Route exact path="/category/:id" element={<Category />} />
 
-            {/* <Route path="" element={<Invoice />} /> */}
-          </Route>
           <Route
             path="*"
             element={
@@ -62,7 +60,7 @@ export default function BasicExample() {
             }
           />
         </Routes>
-      </div>
+      </>
     </Router>
   );
 }

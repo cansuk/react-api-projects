@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Grid, Segment } from 'semantic-ui-react';
 import { getAvailableGenreSeeds } from '../../api';
 import uniqid from 'uniqid';
 
@@ -12,7 +12,9 @@ const AvailableGenreSeeds = () => {
                     {genre}
                 </Grid.Column>
             );
-            setContent(<Grid columns={8} celled>{columns}</Grid>);
+            setContent(<Segment inverted>
+                <Grid inverted columns={8} celled>{columns}</Grid>
+            </Segment>);
         }).catch(error => setContent(<div>Unexpected Error! Details : {error}</div>))
 
     }, []);

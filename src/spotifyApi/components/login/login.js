@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { authorize } from '../../api';
+import { Segment, Icon, Button, Header } from 'semantic-ui-react';
 
 export const Login = () => {
     const host = "https://accounts.spotify.com";
-    const clientId = "84eab1864ed841fc87222b484226f350";
+
+    const clientId = "[your_client_id]";
+
     const scopes = 'user-library-read playlist-modify-public';
     const redirectUri = `${window.location.protocol}//${window.location.host}/auth`;
     debugger;
@@ -13,21 +16,16 @@ export const Login = () => {
         `&scope=${encodeURIComponent(scopes)}`
 
     return (
-        <section className="hero">
-            <div className="hero-body">
-                <div className="container">
-                    <h2 className="subtitle">
-                        Sign in with your Spotify account to see trends about your saved songs.
-                    </h2>
-                    <p>
-                        <a
-                            href={authUrl}
-                            className="spotify-button is-primary button is-large"
-                        >Sign into Spotify</a>
-                    </p>
-                </div>
-            </div>
-        </section>
+        <Segment inverted placeholder style={{ height: '100%' }}>
+            <Header icon>
+                <Icon name='spotify outline' />
+                Sign in with your Spotify account
+            </Header>
+            <Button primary href={authUrl}>Sign into Spotify
+            </Button>
+
+        </Segment>
+
     )
 }
 
